@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&family=Roboto+Mono:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.loading-screen {
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    overflow: hidden;
+}
+
+.loading-screen > i {
+    font-size: 80px;
+    color: #FFA280;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
