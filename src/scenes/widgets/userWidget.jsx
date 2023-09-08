@@ -28,7 +28,7 @@ const UserWidget = ({ userId, picturePath }) => {
     };
 
     const share = () => {
-        navigator.clipboard.writeText(`https://devconnect-dmk2.onrender.com/profile/${userId}`);
+        navigator.clipboard.writeText(`https://devconnect-5y5h.onrender.com/profile/${userId}`);
         setIsOpen(true);
     }
 
