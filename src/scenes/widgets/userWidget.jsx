@@ -28,7 +28,7 @@ const UserWidget = ({ userId, picturePath }) => {
     };
 
     const share = () => {
-        navigator.clipboard.writeText(`https://devconnect-5y5h.onrender.com/profile/${userId}`);
+        navigator.clipboard.writeText(`https://aesthetic-naiad-ad420d.netlify.app/home/profile/${userId}`);
         setIsOpen(true);
     }
 
