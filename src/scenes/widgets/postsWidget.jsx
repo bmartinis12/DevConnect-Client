@@ -10,7 +10,7 @@ const PostsWidget = ({ userId, isProfile = false}) => {
     const [ needUpdate, setNeedUpdate ] = useState('false')
 
     const getPosts = async () => {
-        const response = await fetch('https://devconnect-api-5vst.onrender.com/posts', {
+        const response = await fetch('https://devconnect-api.adaptable.app/posts', {
             method: "GET",
             headers: { Authorization: `Bearer ${token}`},
         });
@@ -19,7 +19,7 @@ const PostsWidget = ({ userId, isProfile = false}) => {
     };
 
     const getUserPosts = async () => {
-        const response = await fetch(`https://devconnect-api-5vst.onrender.com/posts/${userId}/posts`, {
+        const response = await fetch(`https://devconnect-api.adaptable.app/posts/${userId}/posts`, {
             method: "GET",
             headers: { Authorization: `Bearer ${token}`},
         });
