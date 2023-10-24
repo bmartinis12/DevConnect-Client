@@ -29,7 +29,7 @@ const Navbar = () => {
             return;
         }
 
-        const response = await fetch(`https://devconnect-api-5vst.onrender.com/users/${search}/search`, {
+        const response = await fetch(`https://devconnect-api.adaptable.app/users/${search}/search`, {
             method: "GET",
             headers: { Authorization: `Bearer ${token}`},
         });
