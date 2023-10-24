@@ -30,7 +30,7 @@ const MyPostWidget = ({ picturePath, isProfile = false }) => {
             formData.append('picturePath', image.name);
         }
 
-        const response = await fetch(`https://devconnect-api-5vst.onrender.com/posts`, {
+        const response = await fetch(`https://devconnect-api.adaptable.app/posts`, {
             method: 'POST',
             headers: { Authorization: `Bearer ${token}`},
             body: formData,
