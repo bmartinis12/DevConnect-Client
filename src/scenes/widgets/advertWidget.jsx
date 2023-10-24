@@ -14,7 +14,7 @@ const AdvertWidget = () => {
                 <Typography color={dark} variant="h5" fontWeight='500'>Sponsored</Typography>
                 <Typography color={medium} sx={{ "&:hover": { color: palette.primary.light, cursor: 'pointer' }}} >Create Ad</Typography>
             </FlexBetween>
-            <img width='100%'height='auto' alt='advert' src='https://devconnect-api-5vst.onrender.com/assets/info4.jpeg' style={{ borderRadius: '0.75rem', margin: '0.75rem 0'}} />
+            <img width='100%'height='auto' alt='advert' src='https://devconnect-api.adaptable.app/assets/info4.jpeg' style={{ borderRadius: '0.75rem', margin: '0.75rem 0'}} />
             <FlexBetween>
                 <Typography color={main}>LovelyCosmetics</Typography>
             </FlexBetween>
