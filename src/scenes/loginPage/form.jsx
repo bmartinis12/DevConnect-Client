@@ -55,7 +55,7 @@ const Form = () => {
         }
         formData.append('picturePath', values.picture.name);
         
-        const savedUserResponse = await fetch('https://devconnect-api-5vst.onrender.com/auth/register', {
+        const savedUserResponse = await fetch('https://devconnect-api.adaptable.app/auth/register', {
             method: 'POST',
             body: formData,
         });
@@ -68,7 +68,7 @@ const Form = () => {
     };
 
     const login = async (values, onSubmitProps) => {
-        const loggedInResponse = await fetch('https://devconnect-api-5vst.onrender.com/auth/login', {
+        const loggedInResponse = await fetch('https://devconnect-api.adaptable.app/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(values),
