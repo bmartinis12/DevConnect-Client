@@ -26,7 +26,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
         isFriend = friends.find((friend) => friend._id === friendId );
     }
     const patchFriend = async () => {
-        const response = await fetch(`https://devconnect-api-5vst.onrender.com/users/${_id}/${friendId}`, {
+        const response = await fetch(`https://devconnect-api.adaptable.app/users/${_id}/${friendId}`, {
             method: 'PATCH',
             headers: {
                 Authorization: `Bearer ${token}`,
