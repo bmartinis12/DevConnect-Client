@@ -12,7 +12,7 @@ const FriendListWidget = ({ userId }) => {
     const { palette } = useTheme();
 
     const getFriends = async () => {
-        const response = await fetch(`https://devconnect-api-5vst.onrender.com/users/${userId}/friends`, {
+        const response = await fetch(`https://devconnect-api.adaptable.app/users/${userId}/friends`, {
             method: 'GET',
             headers: { Authorization: `Bearer ${token}`}
         });
