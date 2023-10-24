@@ -21,7 +21,7 @@ const PostWidget = ({ postId, postUserId, name, description, location, picturePa
     const main = palette.neutral.main;
 
     const patchLike = async () => {
-        const response = await fetch(`https://devconnect-api-5vst.onrender.com/posts/${postId}/like`, {
+        const response = await fetch(`https://devconnect-api.adaptable.app/posts/${postId}/like`, {
             method: 'PATCH',
             headers: { 
                 Authorization: `Bearer ${token}`,
@@ -34,7 +34,7 @@ const PostWidget = ({ postId, postUserId, name, description, location, picturePa
     };
 
     const patchComment = async () => {
-        const response = await fetch(`https://devconnect-api-5vst.onrender.com/posts/${postId}/comment`, {
+        const response = await fetch(`https://devconnect-api.adaptable.app/posts/${postId}/comment`, {
             method: 'PATCH',
             headers: { 
                 Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ const PostWidget = ({ postId, postUserId, name, description, location, picturePa
     }
 
     const handleDelete = async () => {
-        const response = await fetch(`https://devconnect-api-5vst.onrender.com/posts/${postId}/delete`, {
+        const response = await fetch(`https://devconnect-api.adaptable.app/posts/${postId}/delete`, {
             method: 'DELETE',
             headers: { 
                 Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ const PostWidget = ({ postId, postUserId, name, description, location, picturePa
             <Friend  friendId={postUserId} name={name} subtitle={location} userPicturePath={userPicturePath} />
             <Typography color={main} sx={{ marginTop: '1rem' }}>{description}</Typography>
             {picturePath && (
-                <img width='100%' height='auto' alt='post' style={{ borderRadius: '0.75rem', marginTop: '0.75rem' }} src={`https://devconnect-api-5vst.onrender.com/assets/${picturePath}`} />
+                <img width='100%' height='auto' alt='post' style={{ borderRadius: '0.75rem', marginTop: '0.75rem' }} src={`https://devconnect-api.adaptable.app/assets/${picturePath}`} />
             )}
             <FlexBetween mt='0.25rem' >
                 <FlexBetween gap='1rem'>
